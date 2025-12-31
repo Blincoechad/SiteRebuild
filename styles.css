@@ -1,0 +1,574 @@
+body {
+  padding-top: 30px;
+  background-image: url(media/darkBlueBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(122, 122, 168);
+  color: #000;
+  text-align: center;
+}
+/* wrapper box */
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.close-menu {
+  display: none;
+}
+.nav-logo {
+  position: relative; /* stay in the flow, but can adjust img separately */
+}
+
+.nav-logo img {
+  position: absolute;   /* take it out of flow so it doesn’t move buttons */
+  top: 10px;             /* vertically center */
+  left: 40px;            /* adjust horizontally if needed */
+  transform: translate(-50%, -50%); /* center perfectly */
+  height: 330px;        /* the size you want */
+  width: auto;          /* keep proportions */
+  z-index: 1000;        /* make sure it sits above background/buttons */
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  max-width: 1000px;
+  height: 100px;
+  background-image: url(media/hospitalOutside.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding:  30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  justify-content: flex-start;
+  z-index: 1000;
+  max-height: 90px;
+  overflow: hidden;
+  
+}
+
+/* Logo */
+/* .nav-logo {
+  display: flex;
+  color: #021027;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.2rem;
+  text-decoration: underline;
+} */
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f8f7f7;
+  padding: 17px 35px;
+  border-radius: 77px 1px;
+  z-index: auto;
+  
+
+  background: linear-gradient(145deg, #1a1e27, #093bbbd5);
+  box-shadow: 2px 10px 16px black;
+
+  transition: transform 0.2s ease,
+  box-shadow 0.2s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(17, 68, 169, 0.665);
+}
+
+/* logo */
+
+
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+/* links */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  position: relative;;
+  width: 410px;
+  gap: 14px;
+  margin: 0px;
+  padding: 0;
+  z-index: 99999;
+  list-style: none; /* removes bullets */
+  padding: 0;       /* remove default padding */
+  margin: 0;        /* remove default margin */
+}
+
+
+
+
+
+.nav-links a:hover {
+  transform: translateY(-18px);
+  box-shadow: 0 6px 25px rgba(242, 239, 239, 0.4);
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  
+}
+.companyName {
+  font-size: 50px;
+  border: 12px solid black;
+  border-radius: 20%;
+  padding: 50px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.site-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.searchBar-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(5, 5, 6);
+  font-size: 2.6rem;
+}
+
+.search-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  opacity: .9;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 8px;
+  row-gap: 20px;
+  width: max-content;
+  margin: 0 auto;
+}
+.inputBox {
+  border: 5px solid black;
+  border-radius: 30px;
+  background-color: rgb(21, 53, 127);
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  width: 290px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 18px black;
+}
+
+.inputBox::placeholder {
+  color: #ddd;
+  opacity: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputButton {
+  position: relative;
+  height: 40px;
+  width: 300px;
+  margin-top: 26px;
+  font-size: 16px;
+  color: #dae2e8;
+  background: #060707;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.inputButton:hover {
+  transform: scale(1.05);
+}
+
+.box-1 {
+  min-height: 100px;
+  width: 800px;
+  border: 12px solid rgb(32, 26, 93);
+  border-radius: 20px;
+  background-image: url(media/doctorsPhoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+}
+
+
+
+
+.site-footer {
+  position: relative;
+  margin-top: 30px;
+  min-height: 90px;
+  padding: 20px 40px;
+  background-color: #0a0f28;
+  color: #fff;
+  font-size: 0.85rem;
+  z-index: -1;
+}
+
+.site-footer .copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.site-footer .address {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  text-align: right;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+.button1, .button2, .button3, .button4, .button5,
+.button6, .button7, .button8, .button9, .button10, .button11, .button12 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  height: 170px;
+  width: 200px;
+  opacity: .9;
+  border: 12px solid black;
+  background: -webkit-linear-gradient( rgb(22, 22, 183),  rgb(46, 46, 122));
+  border-radius: 1px 20px 1px;
+  transition: transform 0.2s ease;
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover,
+.button6:hover, .button7:hover, .button8:hover, .button9:hover, .button10:hover,
+ .button11:hover, .button12:hover {
+    animation: hoverScaleOut 0.2s ease forwards;
+    background-color: rgb(8, 49, 91);
+    color: white;
+    opacity: .9;
+    
+  
+}
+.searchBar-text {
+  position: relative;
+  bottom: 60px;
+  left: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  
+  
+}
+
+.inputBox {
+  border: 5px solid black;
+  background-color: rgba(21, 53, 127, 0.489);
+  color: white;
+  padding: 10px;
+  height: 40px;
+  width: 290px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 18px black;
+  margin-right: 340px;
+
+}
+  /* for browser capability */
+  .inputBox::placeholder {
+  color: #ddd;  /* light gray placeholder */
+  opacity: 1;   /* ensures full visibility in Safari */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.submit-text {
+  color: rgb(218, 223, 227);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+.inputButton {
+  position: relative;
+  height: 40px;
+  width: 300px;
+  margin-left: 23px;
+  margin-top: 26px;
+  font-size: 16px;
+  color: #2f8f5e;
+  background: #060707f3;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  opacity: .9;
+}
+ /* submit button hover effect */
+.inputButton:hover {
+  animation: hoverScaleOut 0.2s ease forwards;
+}
+/* hover effects on nav buttons */
+.home-nav, .equipment-nav, .accessories-nav, .supplies-nav,
+.parts-nav {
+  transition: transform 0.2s ease;
+}
+
+.home-nav:hover , .equipment-nav:hover, .accessories-nav:hover, 
+.supplies-nav:hover, .parts-nav:hover {
+  animation: hoverScaleOut 0.2s ease forwards;
+}
+/*                  */
+
+
+/* glowing ring */
+.inputButton::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+
+  filter: blur(6px);
+  opacity: 10;
+  z-index: 0;
+  
+}
+
+/* inner mask */
+.inputButton::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: #255dd55c;
+  z-index: 0;
+}
+
+/* text stays on top */
+.inputButton span {
+  position: relative;
+  z-index: 2;
+}
+
+.inputButton:hover::before {
+  opacity: 1;
+}
+/* keyframes for hover effects on buttons */
+@keyframes hoverScaleOut {
+  from { transform: scale(1); }
+  to   { transform: scale(1.05); }
+}
+/* key frames for light animation on submit button */
+
+
+/* Media querys for mobile / hamburger menu */
+/* Mobile Hamburger Menu */
+
+  /* show hamburger */
+
+
+@media (max-width: 768px) {
+
+/* Nav/ Hamburger Menu */
+
+  .hamburger {
+    display: block !important;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(10, 15, 40, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1500;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 80%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 0 auto;
+  }
+
+  .close-item {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1600;
+  }
+
+  .close-menu {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+/* Logo position editing */
+
+  .nav-logo {
+    position: fixed;
+    bottom: -70px;
+    right: -36px;
+    z-index: 3000;
+  }
+
+  .nav-logo img {
+    position: static;
+    transform: none;
+    height: 260px;
+    width: auto;
+  }
+
+/* search section */
+
+  .search-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .searchBar-text {
+    text-align: center;
+    font-size: 24px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .inputBox,
+  .inputButton {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+
+ /* My Layout */
+
+  .box-1 {
+    width: 90%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 90%;
+  }
+
+  .button1, .button2, .button3, .button4,
+  .button5, .button6, .button7, .button8,
+  .button9, .button10, .button11, .button12 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+  }
+
+/* Footer */
+
+  .site-footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .site-footer .address,
+  .site-footer .copyright {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .site-footer p {
+    position: relative;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+  .address {
+    position: relative;
+    left: 3px;
+    padding: 8px;
+  }
+
+/* Hide Content When Hamburger Menu is Open */
+
+  body.menu-open .search-section,
+  body.menu-open .searchBar-text,
+  body.menu-open .inputButton,
+  body.menu-open .product-grid {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
