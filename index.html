@@ -1,212 +1,421 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pacific Northwest X-Ray Inc.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pacific Northwest X-Ray Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scan-line"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
-<div class="scan-line"></div>
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
+    <!-- nav -->
+    <nav>
+      <a class="nav-brand" href="/">
+        <div class="logo-ring">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00b7ff"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"
+            />
+          </svg>
+        </div>
+        <div class="nav-brand-text">
+          Pacific NW
+          <br />
+          <span>X-Ray Inc.</span>
+        </div>
+      </a>
 
-<!-- nav -->
-<nav>
-  <a class="nav-brand" href="/">
-    <div class="logo-ring">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#00b7ff" stroke-width="2">
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/>
-      </svg>
-    </div>
-    <div class="nav-brand-text">
-      Pacific NW<br><span>X-Ray Inc.</span>
-    </div>
-  </a>
-
-  <button class="hamburger" id="ham" aria-label="menu">
-    <span></span><span></span><span></span>
-  </button>
-
-  <ul class="nav-links" id="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/Equipment/">Equipment</a></li>
-    <li><a href="/Accessories/">Accessories</a></li>
-    <li><a href="/Supplies/">Supplies</a></li>
-    <li><a href="/Parts/">Parts</a></li>
-  </ul>
-</nav>
-
-<!-- hero -->
-<div class="hero">
-  <p class="hero-eyebrow">// Established 1997 · Gresham, Oregon</p>
-  <h1>Medical Imaging<br><span class="hl">Precision Equipment</span></h1>
-  <p class="hero-sub">
-    Supplying radiologists, technicians, and facilities with industry-leading X-Ray products, accessories, and components since 1997.
-  </p>
-
-  <div class="search-wrap">
-    <p class="search-label">// Product Search</p>
-    <form class="search-bar" action="/Search/" method="post">
-      <input type="text" name="SearchWords" placeholder="Search products, parts, accessories…" maxlength="75" />
-      <button type="submit" class="search-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-        Search
+      <button class="hamburger" id="ham" aria-label="menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-    </form>
-  </div>
 
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-val">28+</div>
-      <div class="stat-label">Years Active</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Equipment/">Equipment</a></li>
+        <li><a href="/Accessories/">Accessories</a></li>
+        <li><a href="/Supplies/">Supplies</a></li>
+        <li><a href="/Parts/">Parts</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero">
+      <p class="hero-eyebrow">// Established 1997 · Gresham, Oregon</p>
+      <h1>
+        Medical Imaging
+        <br />
+        <span class="hl">Precision Equipment</span>
+      </h1>
+      <p class="hero-sub">
+        Supplying radiologists, technicians, and facilities with
+        industry-leading X-Ray products, accessories, and components since 1997.
+      </p>
+
+      <div class="search-wrap">
+        <p class="search-label">// Product Search</p>
+        <form class="search-bar" action="/Search/" method="post">
+          <input
+            type="text"
+            name="SearchWords"
+            placeholder="Search products, parts, accessories…"
+            maxlength="75"
+          />
+          <button type="submit" class="search-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-val">28+</div>
+          <div class="stat-label">Years Active</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-val">5K+</div>
+          <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-val">USA</div>
+          <div class="stat-label">Nationwide</div>
+        </div>
+      </div>
     </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-val">5K+</div>
-      <div class="stat-label">Products</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-val">USA</div>
-      <div class="stat-label">Nationwide</div>
-    </div>
-  </div>
-</div>
 
-<!-- product section -->
-<section>
-  <div class="section-header">
-    <p class="section-tag">// Most Popular</p>
-    <h2>Browse Top Categories</h2>
-    <p>Quickly navigate to our highest-demand product lines</p>
-  </div>
-
-  <div class="product-grid">
-
-    <a class="product-card" href="/Accessories/LeadProducts/Aprons/Infab/LightningFast">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2c-3 0-7 2-7 7v11h14V9c0-5-4-7-7-7z"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+    <!-- product section -->
+    <section>
+      <div class="section-header">
+        <p class="section-tag">// Most Popular</p>
+        <h2>Browse Top Categories</h2>
+        <p>Quickly navigate to our highest-demand product lines</p>
       </div>
-      <div class="card-title">Most Comfortable Aprons</div>
-      <div class="card-arrow">
-        View Products
-        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+
+      <div class="product-grid">
+        <a
+          class="product-card"
+          href="/Accessories/LeadProducts/Aprons/Infab/LightningFast"
+        >
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2c-3 0-7 2-7 7v11h14V9c0-5-4-7-7-7z" />
+              <line x1="9" y1="12" x2="15" y2="12" />
+            </svg>
+          </div>
+          <div class="card-title">Most Comfortable Aprons</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/PatAsst/MerchantBoards/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="9" y1="3" x2="9" y2="21" />
+            </svg>
+          </div>
+          <div class="card-title">X-Ray Merchant Boards</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/Phantoms/Test/LinePair/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <line x1="3" y1="14" x2="21" y2="14" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </div>
+          <div class="card-title">Line-Pair Resolution Phantoms</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/PosAides/Pet-Stiomer/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9,22 9,12 15,12 15,22" />
+            </svg>
+          </div>
+          <div class="card-title">Small Animal Immobilizers</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/LeadProducts/Windows/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="2" />
+              <line x1="12" y1="2" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+            </svg>
+          </div>
+          <div class="card-title">Lead Glass Windows</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a
+          class="product-card"
+          href="/Accessories/LeadProducts/MobileBarriers/Infab/"
+        >
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="4" y="2" width="16" height="20" rx="1" />
+              <line x1="4" y1="8" x2="20" y2="8" />
+              <line x1="4" y1="14" x2="20" y2="14" />
+            </svg>
+          </div>
+          <div class="card-title">Mobile Lead Barriers</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Equipment/Test/X-Ray/ECC/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
+            </svg>
+          </div>
+          <div class="card-title">X-Ray Test Meters</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/PatAsst/TablePads/X-Ray/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="10" rx="2" />
+              <line x1="6" y1="17" x2="6" y2="21" />
+              <line x1="18" y1="17" x2="18" y2="21" />
+            </svg>
+          </div>
+          <div class="card-title">X-Ray Table Pads</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Accessories/Phantoms/Test/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="4" />
+              <line x1="12" y1="2" x2="12" y2="8" />
+              <line x1="12" y1="16" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="8" y2="12" />
+              <line x1="16" y1="12" x2="22" y2="12" />
+            </svg>
+          </div>
+          <div class="card-title">System Test Phantoms</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Equipment/DarkEquip/Rotex/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2z" />
+              <path d="M4 20a8 8 0 0 1 16 0" />
+            </svg>
+          </div>
+          <div class="card-title">Silver Recovery Systems</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a
+          class="product-card"
+          href="/Accessories/LeadProducts/Blockers-Shields/Curtains/"
+        >
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 3h18v14a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V3z" />
+              <line x1="12" y1="3" x2="12" y2="21" />
+            </svg>
+          </div>
+          <div class="card-title">Lead Curtains</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <a class="product-card" href="/Parts/Grids/">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+            </svg>
+          </div>
+          <div class="card-title">X-Ray Grids</div>
+          <div class="card-arrow">
+            View Products
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
       </div>
-    </a>
+    </section>
 
-    <a class="product-card" href="/Accessories/PatAsst/MerchantBoards/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+    <!-- footer -->
+    <footer>
+      <div>
+        <div class="footer-brand">
+          Pacific
+          <span>Northwest</span>
+          X-Ray Inc.
+        </div>
+        <div class="footer-detail">
+          P.O. Box 625 · Gresham, OR 97030 U.S.A.
+          <br />
+          Toll Free:
+          <a href="tel:8008279729">800-827-9729</a>
+          &nbsp;·&nbsp; Fax: 503-667-3000
+        </div>
       </div>
-      <div class="card-title">X-Ray Merchant Boards</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/Phantoms/Test/LinePair/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <div class="footer-right">
+        <p class="footer-copy">
+          ©1997–2025 Pacific Northwest X-Ray Inc.
+          <br />
+          All Rights Reserved
+        </p>
       </div>
-      <div class="card-title">Line-Pair Resolution Phantoms</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/PosAides/Pet-Stiomer/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
-      </div>
-      <div class="card-title">Small Animal Immobilizers</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/LeadProducts/Windows/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-      </div>
-      <div class="card-title">Lead Glass Windows</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/LeadProducts/MobileBarriers/Infab/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="14" x2="20" y2="14"/></svg>
-      </div>
-      <div class="card-title">Mobile Lead Barriers</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Equipment/Test/X-Ray/ECC/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
-      </div>
-      <div class="card-title">X-Ray Test Meters</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/PatAsst/TablePads/X-Ray/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><line x1="6" y1="17" x2="6" y2="21"/><line x1="18" y1="17" x2="18" y2="21"/></svg>
-      </div>
-      <div class="card-title">X-Ray Table Pads</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/Phantoms/Test/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
-      </div>
-      <div class="card-title">System Test Phantoms</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Equipment/DarkEquip/Rotex/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
-      </div>
-      <div class="card-title">Silver Recovery Systems</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Accessories/LeadProducts/Blockers-Shields/Curtains/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 3h18v14a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V3z"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-      </div>
-      <div class="card-title">Lead Curtains</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-    <a class="product-card" href="/Parts/Grids/">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-      </div>
-      <div class="card-title">X-Ray Grids</div>
-      <div class="card-arrow">View Products <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-    </a>
-
-  </div>
-</section>
-
-<!-- footer -->
-<footer>
-  <div>
-    <div class="footer-brand">Pacific <span>Northwest</span> X-Ray Inc.</div>
-    <div class="footer-detail">
-      P.O. Box 625 · Gresham, OR 97030 U.S.A.<br>
-      Toll Free: <a href="tel:8008279729">800-827-9729</a> &nbsp;·&nbsp; Fax: 503-667-3000
-    </div>
-  </div>
-  <div class="footer-right">
-    <p class="footer-copy">©1997–2025 Pacific Northwest X-Ray Inc.<br>All Rights Reserved</p>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>
