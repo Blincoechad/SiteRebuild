@@ -96,18 +96,11 @@ nav::before {
 }
 .nav-brand .logo-img {
   height: 130px;
-  min-height:50px ; /*added this*/
+  max-height: auto;
   width: auto;
   display: block;
   object-fit: contain;
 }
-.logo-img {
-  height: 130px;
-  min-height:50px ; /*added this*/
-  width: auto;
-  display: block;
-  object-fit: contain;
-} /* added this class*/
 .nav-brand-text {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
