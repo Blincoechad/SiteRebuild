@@ -96,7 +96,6 @@ nav::before {
 }
 .nav-brand .logo-img {
   height: 130px;
-  max-height: auto;
   width: auto;
   display: block;
   object-fit: contain;
@@ -612,5 +611,8 @@ footer {
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
+  }
+  .logo-image {
+    max-height: 80px; 
   }
 }
